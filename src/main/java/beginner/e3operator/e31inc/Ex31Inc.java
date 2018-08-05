@@ -1,5 +1,5 @@
 /**
-  ClassMain.java
+  Ex2Inc.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,13 +7,27 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 01-Jul-2018		Nawal Sah				Initial Version
+ 02-Aug-2018		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package beginner;
+package beginner.e3operator.e31inc;
 
-public class ClassMain {
+/**
+ * post inc(i++) first assign and then increment
+ * 
+ * pre inc(++i) first increment and then increment
+ * 
+ */
+public class Ex31Inc {
+	public static void main(String[] args) {
+		int x = 90;
 
+		// post
+		System.out.println("x = " + x++);
+
+		// pre
+		System.out.println("x = " + ++x);
+	}
 }
