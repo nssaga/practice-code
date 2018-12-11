@@ -1,5 +1,5 @@
 /**
-  Ex32Dec.java
+  Instanceof.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,26 +7,13 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 04-Aug-2018		Nawal Sah				Initial Version
+ 06-Aug-2018		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package beginner.e3operator.e31inc;
+package beginner.e3operator.instance;
 
-/**
- * post dec(i++) first assign and then decrement
- * 
- * pre dec(++i) first increment and then decrement
- */
-public class Ex32Dec {
-	public static void main(String[] args) {
-		int x = 90;
+public class Instanceof {
 
-		// post
-		System.out.println("x = " + x--);
-
-		// pre
-		System.out.println("x = " + --x);
-	}
 }

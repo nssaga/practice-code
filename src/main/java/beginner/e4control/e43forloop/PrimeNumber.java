@@ -16,7 +16,8 @@ public class PrimeNumber {
 
 		int n = 11;
 		System.out.println(isPrimeNumber1(n) ? n + " is prime number." : n + " is not prime number.");
-		
+
+		primeNumber2(n);
 	}
 
 	/**
@@ -32,6 +33,23 @@ public class PrimeNumber {
 			}
 		}
 		return true;
+	}
+
+	//Way 2
+	public static void primeNumber2(int n) {
+		for (int i = 2; i < n; i++) {
+			boolean flag = true;
+			for (int j = 2; j < i; j++) {
+				if (i % j == 0) {
+					flag = false;
+					break;
+				}
+			}
+			if (flag) {
+				System.out.print(i + " ");
+			}
+
+		}
 	}
 
 }

@@ -1,5 +1,5 @@
 /**
-  Ex2Inc.java
+  ex1Array1D.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,27 +7,13 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 02-Aug-2018		Nawal Sah				Initial Version
+ 20-Aug-2018		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package beginner.e3operator.e31inc;
+package beginner.e5array;
 
-/**
- * post inc(i++) first assign and then increment
- * 
- * pre inc(++i) first increment and then increment
- * 
- */
-public class Ex31Inc {
-	public static void main(String[] args) {
-		int x = 90;
+public class ex1Array1D {
 
-		// post
-		System.out.println("x = " + x++);
-
-		// pre
-		System.out.println("x = " + ++x);
-	}
 }

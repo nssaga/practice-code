@@ -43,7 +43,7 @@ public class Ex2TypesOfDT {
 /**
  * Every class created in java which having fields getter/setter can be called as user defined data type.
  * 
- * Student class is a data type having different type of value named as "name and age".
+ * Student class is a user defined data type having different type of value named as "name and age".
  */
 class Student {
 	private String name;

@@ -39,9 +39,11 @@ public class ExRelational {
 		Thread t = new Thread();
 		Object o = new Object();
 		String s = new String("nawal");
+		String s1 = new String();
 
 		System.out.println(t == o);
 		System.out.println(o == s);
+		//System.out.println(t == s1);
 		//System.out.println(t == s);// compile time error "Incompatible operand types Thread and String"
 		// if we apply equality operator for object type then it is mandatory the
 		// relation of argument type in object else it will throw compile time error
