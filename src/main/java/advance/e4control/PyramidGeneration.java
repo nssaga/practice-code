@@ -4,13 +4,11 @@ public class PyramidGeneration {
 	public static void main(String[] args) {
 		PyramidGenerator pyramid = new PyramidGenerator();
 
-		// pyramid.pyramid1_1();
-		// pyramid.pyramid1_2();
-		// pyramid.pyramid2_1();
-		// pyramid.pyramid3();
+		pyramid.pyramid2_1();
+		pyramid.pyramid3();
 
-		// pyramid.pyramid4();
-		// pyramid.pyramid5_Pascal();
+		pyramid.pyramid4();
+		pyramid.pyramid5_Pascal();
 		pyramid.pyramid6();
 
 	}
@@ -18,25 +16,7 @@ public class PyramidGeneration {
 
 class PyramidGenerator {
 
-	void pyramid1_1() {
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j <= i; j++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
-	}
-
-	void pyramid1_2() {
-		System.out.println("------pyramid1_2-------");
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j <= i; j++) {
-				System.out.print(j);
-			}
-			System.out.println();
-		}
-	}
-
+	
 	void pyramid2_1() {
 		System.out.println("------pyramid2_1-------");
 		for (int i = 1; i <= 5; i++) {
@@ -95,11 +75,11 @@ class PyramidGenerator {
 		int j;
 		int rows = 8;
 
-		for (int i = 1; i <= rows; i++) {
-			for (j = 1; j <= rows - i; j++) // for initial spacing.
+		for (int i = 0; i < rows; i++) {
+			for (j = 0; j < rows - i; j++) // for initial spacing.
 				System.out.print(" ");
 
-			for (int k = j + 1; k <= rows; k++) // creates left half.
+			for (int k = j ; k < rows; k++) // creates left half.
 				System.out.print("*");
 
 			for (int k = rows; k > j - 1; k--)// creates right half.

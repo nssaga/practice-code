@@ -3,6 +3,9 @@ package advance.e4control;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * sequence that reads the same backwards as forwards
+ */
 public class Palindrome2digit {
 	public static void main(String[] ar) throws Exception {
 		int ch = 0, st = 0, end = 0, n = 0, i = 0, j = 0, temp = 0, r = 0, sum = 0, flag = 0, c = 0;

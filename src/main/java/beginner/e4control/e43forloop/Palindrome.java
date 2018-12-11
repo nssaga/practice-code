@@ -10,18 +10,21 @@ import java.io.InputStreamReader;
 public class Palindrome {
 	public static void main(String[] args) throws Exception {
 		int number = 0;
+		//Accept Input value form leyboard 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter number= ");
 		number = Integer.parseInt(br.readLine());
 		isPalindrome1(number);
 
 		String str = "abd";
-		System.out.println("isPalindrome : " + isPalindrome2(str));
+		System.out.println("isPalindrome : " + isPalindrome2("fnjzxnxnjplfwzowfdrhrvhegkmoncbkembjoudteqchjwqfzlofyflkmxnooasxulwofjzknthqqxgshvwxdvhdnlzjzdjdiifg"));
 
 	}
 
 	public static void isPalindrome1(int number) {
-		int rem = 0, sum = 0, temp = 0;
+		int rem = 0;
+		int sum = 0;
+		int temp = 0;
 
 		temp = number;
 		while (number > 0) {

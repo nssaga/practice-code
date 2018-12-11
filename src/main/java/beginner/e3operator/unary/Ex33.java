@@ -12,7 +12,7 @@
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package beginner.e3operator.e31inc;
+package beginner.e3operator.unary;
 
 /**
  * inc/decrement is only applicable for variable not for constant , if we will
