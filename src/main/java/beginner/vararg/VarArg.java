@@ -41,4 +41,6 @@ public class VarArg {
 	void vararg2(String a, int... arg) {
 
 	}
+	
+	//void v(String. .. a) { }  //invalid, 3 dots will always be together
 }

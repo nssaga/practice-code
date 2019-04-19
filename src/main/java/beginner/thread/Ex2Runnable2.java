@@ -1,5 +1,5 @@
 /**
-  Ex2Thread.java
+  Ex2Runnable2.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,39 +7,46 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 10-Oct-2018		Nawal Sah				Initial Version
+ 02-Mar-2019		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
 package beginner.thread;
 
-public class Ex2Thread {
-
+public class Ex2Runnable2 {
 	public static void main(String[] args) {
-		ThreadExample t = new ThreadExample("thread1");
-		Thread th = new Thread(t);
-		th.start();
-	}
+		RunnableDemo rd1 = new RunnableDemo("Thread-1");
+		rd1.start();
 
+		RunnableDemo rd2 = new RunnableDemo("Thread-2");
+		rd2.start();
+	}
 }
 
-class ThreadExample extends Thread {
+class RunnableDemo implements Runnable {
+	private Thread t;
 	private String threadName;
 
-	public ThreadExample(String threadName) {
+	public RunnableDemo(String threadName) {
 		this.threadName = threadName;
+		System.out.println("Creating Thread : " + threadName);
 	}
 
 	@Override
 	public void run() {
-		System.out.println("Running thread :" + threadName);
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e1) {
-			System.out.println("Thread Interrupted");
+		System.out.printf("Running thread %s ...\n", threadName);
+		for (int i = 0; i < 4; i++) {
+			System.out.printf("Thread %s : %d \n", threadName, i);
 		}
-		System.out.println("Exiting from thread :" + threadName);
+		System.out.printf("Exiting thread %s \n", threadName);
 	}
 
+	public void start() {
+		System.out.println("Starting Thread " + threadName);
+		if (t == null) {
+			t = new Thread(this, threadName);
+			t.start();
+		}
+	}
 }

@@ -19,8 +19,8 @@ package beginner.generic;
  * casting because there is guarantee present inside array<br>
  * String[] s = new String[100];<br>
  * At the time of retrieval type casting is not required. <br>
- * But in the case of at the time of retrieval compulsory we shpuld perform
- * typecasting because there is not guarrantee for the type element presennt
+ * But in the case of at the time of retrieval compulsory we should perform
+ * type casting because there is not guarantee for the type element present
  * inside in collection<br>
  * 
  */

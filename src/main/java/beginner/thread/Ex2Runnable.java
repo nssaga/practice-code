@@ -14,7 +14,13 @@
  */
 package beginner.thread;
 
-public class Ex1Runnable {
+/**
+ * The basic difference between Thread and Runnable is that each thread defined
+ * by extending Thread class creates a unique object and get associated with
+ * that object. On the other hand, each thread defined by implementing Runnable
+ * interface shares the same object.
+ */
+public class Ex2Runnable {
 	public static void main(String[] args) {
 		RunnableExample r = new RunnableExample("first");
 		Thread th = new Thread(r);

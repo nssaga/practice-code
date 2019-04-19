@@ -14,7 +14,7 @@
  */
 package beginner.e3object;
 
-public class Ex4Clone implements Cloneable{
+public class Ex4Clone implements Cloneable {
 	private String name;
 
 	public Ex4Clone(String name) {
@@ -32,9 +32,10 @@ public class Ex4Clone implements Cloneable{
 
 		Ex4Clone clone = (Ex4Clone) ex.clone();
 		clone.getName();
-		
-		/*Ex4 ex1 = new Ex4("Clone object");
-		Ex4 ex2 = ex2.clone();*/
+
+		/*
+		 * Ex4 ex1 = new Ex4("Clone object"); Ex4 ex2 = ex2.clone();
+		 */
 
 	}
 }

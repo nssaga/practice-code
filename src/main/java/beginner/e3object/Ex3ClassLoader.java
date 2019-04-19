@@ -7,12 +7,11 @@
 package beginner.e3object;
 
 /**
- * almost similar to that of the above one (class.forName) which load a class
- * dynamically
+ * almost similar to that of the (class.forName) which load a class dynamically
  * 
  * The ClassLoader class has a method loadClass() which loads the class and on
- * top of it we will call the newInstance() method which creates and return the
- * object of Object type, hence it is typecasted
+ * top of it, we will call the newInstance() method which creates and return the
+ * object of Object type, hence it is type casted
  */
 public class Ex3ClassLoader {
 
