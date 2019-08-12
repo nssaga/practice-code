@@ -1,5 +1,5 @@
 /**
-  PushZerosToEnd.java
+  Exception06.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,35 +7,34 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 28-Apr-2019		Nawal Sah				Initial Version
+ 03-Jun-2019		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package nssaga.advance.problem;
+package nssaga.beginner.e10exception;
 
-public class PushZerosToEnd {
-
+/**
+ * Java program to illustrate finally in Case where exceptions occur and match
+ * in the program
+ */
+public class ExceptionEx06 {
 	public static void main(String[] args) {
-		int arr[] = { 1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9 };
-		pushZerosToEnd(arr);
-		for (Integer i : arr)
-			System.out.print(arr[i]);
-		System.out.println("-------");
-		for (int i = 0; i< arr.length; i++)
-			System.out.print(arr[i]);
-	}
-
-	public static void pushZerosToEnd(int[] num) {
-		int count = 0;
-		int len = num.length;
-		for (int i = 0; i < len; i++) {
-			if (num[i] != 0) {
-				num[count++] = num[i];
-			}
+		int k = 66;
+		try {
+			System.out.println("In try block");
+			int z = k / 0;
+			// Carefully see flow dosen't come here
+			System.out.println("Flow dosen't came here");
 		}
-		while (count < len) {
-			num[count++] = 0;
+
+		catch (ArithmeticException e) {
+			System.out.println("In catch block");
+			System.out.println("Dividing by zero but caught");
+		}
+
+		finally {
+			System.out.println("Executes whether exception occurs or not");
 		}
 	}
 }

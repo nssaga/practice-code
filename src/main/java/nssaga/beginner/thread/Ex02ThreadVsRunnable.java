@@ -29,7 +29,7 @@ package nssaga.beginner.thread;
  * specializing the thread's behavior. You're just giving it something to run.
  * That means composition is the philosophically "purer" way to go.
  * 
- * one significant difference between implementing Runnable and extending Thread
+ * 3. one significant difference between implementing Runnable and extending Thread
  * is that by extending Thread, each of your threads has a unique object
  * associated with it, whereas implementing Runnable, many threads can share the
  * same object instance.

@@ -12,7 +12,7 @@ package nssaga.beginner.e10exception;
  * 
  * @author Nawal Sah
  */
-public class ExceptionEx3 {
+public class ExceptionEx03 {
 	public static void main(String[] args) {
 		// m1();
 		// m2();

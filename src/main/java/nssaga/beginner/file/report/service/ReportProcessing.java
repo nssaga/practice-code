@@ -1,5 +1,5 @@
 /**
-  AssignmentEx.java
+  ReportProcessing.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,31 +7,17 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 12-Aug-2018		Nawal Sah				Initial Version
+ 11-Aug-2019		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package nssaga.beginner.e03operator.assignment;
+package nssaga.beginner.file.report.service;
 
-public class AssignmentEx {
-	public static void main(String[] args) {
-		// Simple Assignment Operator
-		int x = 10;
+import java.util.List;
 
-		// Chained
-		int a = 0, b = 0, c = 0;
-		int y = a = b = c = 20;
-		System.out.println(y);
-		//int g = h = j = 10; // Can't declare and perform operation directly
+import nssaga.beginner.file.report.model.IncomeReport;
 
-		// Compound
-		// int z+=10; Can't declare compute in a single line
-		int z = 0;
-		z += 10;
-
-		a += b -= c *= z;
-		System.out.println(a);
-
-	}
+public interface ReportProcessing {
+	List<IncomeReport> processFile(String file);
 }

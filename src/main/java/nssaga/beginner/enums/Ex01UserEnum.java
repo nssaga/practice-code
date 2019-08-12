@@ -1,5 +1,5 @@
 /**
-  PushZerosToEnd.java
+  UserEnumEx.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,35 +7,19 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 28-Apr-2019		Nawal Sah				Initial Version
+ 25-Aug-2018		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package nssaga.advance.problem;
+package nssaga.beginner.enums;
 
-public class PushZerosToEnd {
+public class Ex01UserEnum {
 
 	public static void main(String[] args) {
-		int arr[] = { 1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9 };
-		pushZerosToEnd(arr);
-		for (Integer i : arr)
-			System.out.print(arr[i]);
-		System.out.println("-------");
-		for (int i = 0; i< arr.length; i++)
-			System.out.print(arr[i]);
-	}
-
-	public static void pushZerosToEnd(int[] num) {
-		int count = 0;
-		int len = num.length;
-		for (int i = 0; i < len; i++) {
-			if (num[i] != 0) {
-				num[count++] = num[i];
-			}
-		}
-		while (count < len) {
-			num[count++] = 0;
-		}
+		System.out.println("Value : "+Ex01User.ADMIN.getValue());
+		System.out.println("Name : "+Ex01User.ADMIN.getName((byte)0));
+		System.out.println("Value by name : "+Ex01User.ADMIN.getValue("Admin"));
+		System.out.println("Name by value : "+Ex01User.ADMIN.getEnum((byte)0).name());
 	}
 }

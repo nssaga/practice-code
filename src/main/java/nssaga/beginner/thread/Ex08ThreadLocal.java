@@ -1,5 +1,5 @@
 /**
-  AssignmentEx.java
+  Ex08ThreadLocal.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,31 +7,21 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 12-Aug-2018		Nawal Sah				Initial Version
+ 21-May-2019		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package nssaga.beginner.e03operator.assignment;
+package nssaga.beginner.thread;
 
-public class AssignmentEx {
-	public static void main(String[] args) {
-		// Simple Assignment Operator
-		int x = 10;
+/**
+ * It created per thread instances for memory efficiency and thread safety. It
+ * is used when we want to initialize object differently per thread.
+ * 
+ * Thread confinement
+ * Per thread object for performance 
+ * per thread context
+ */
+public class Ex08ThreadLocal {
 
-		// Chained
-		int a = 0, b = 0, c = 0;
-		int y = a = b = c = 20;
-		System.out.println(y);
-		//int g = h = j = 10; // Can't declare and perform operation directly
-
-		// Compound
-		// int z+=10; Can't declare compute in a single line
-		int z = 0;
-		z += 10;
-
-		a += b -= c *= z;
-		System.out.println(a);
-
-	}
 }

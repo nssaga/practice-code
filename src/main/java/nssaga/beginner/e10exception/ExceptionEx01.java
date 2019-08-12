@@ -10,11 +10,11 @@ package nssaga.beginner.e10exception;
  *
  * @author Nawal Sah
  */
-public class ExceptionEx1 {
+public class ExceptionEx01 {
 	static String str = "a";
 
 	public static void main(String[] args) {
-		new ExceptionEx1().method1();
+		new ExceptionEx01().method1();
 		System.out.println(str);
 	}
 

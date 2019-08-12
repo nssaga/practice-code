@@ -37,10 +37,10 @@ package nssaga.beginner.e11string;
  * 6) Because of synchronization StringBuffer is considered thread safe e.g.
  * multiple threads can call its method without compromising internal data
  * structure but StringBuilder is not synchronized hence not thread safe. See
- * The Complete Java Masterclass for more details.
+ * 
  * 
  * 7) Another side effect of synchronization is speed. Since StringBuffer is
- * synchronized its lot slower than StringBuilder.
+ * synchronized its a lot slower than StringBuilder.
  * 
  * 8) The default length of StringBuffer is 16 characters. You should explicitly
  * define the size of it, especially if you know that size would be less or more

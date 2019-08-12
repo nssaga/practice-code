@@ -9,6 +9,9 @@ package nssaga.beginner.e02datatype;
 
 /**
  * Data type is a keyword used to identify type of data for a variable.
+ * 
+ * Data type also allocate sufficient memory to a variable
+ * 
  */
 public class Ex1DataType {
 	public static void main(String[] args) {

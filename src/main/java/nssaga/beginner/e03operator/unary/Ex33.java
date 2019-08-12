@@ -16,14 +16,14 @@ package nssaga.beginner.e03operator.unary;
 
 /**
  * inc/decrement is only applicable for variable not for constant , if we will
- * try for constant vale it will throw compile time error "Unresolved
+ * try for constant variable, it will throw compile time error "Unresolved
  * compilation problem: Invalid argument to operation ++/-- or unexpected type"
  */
 public class Ex33 {
 	public static void main(String[] args) {
 
 		// case 1
-		// int x =++10;
+		// int x =++10; // declaring and performing operation at same time.
 		// System.out.println(x);
 
 		// case 2
@@ -54,7 +54,7 @@ public class Ex33 {
 		byte f = 10;
 		byte g = 10;
 		// byte h = f + g; // By default arithmetic operation result is integer and if
-		// it is higher data type then it type casted to higher data type if, it must
+		// it is higher data type then it type casted to higher data type, it must
 		// be casted else it will throw "possible loss of precision"
 
 		// f=f+1; // it must be casted because arithmetic operation result to integer

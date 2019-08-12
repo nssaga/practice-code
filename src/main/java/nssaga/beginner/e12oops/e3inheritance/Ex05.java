@@ -1,5 +1,5 @@
 /**
-  AssignmentEx.java
+  Ex05.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,31 +7,36 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 12-Aug-2018		Nawal Sah				Initial Version
+ 14-Jul-2019		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package nssaga.beginner.e03operator.assignment;
+package nssaga.beginner.e12oops.e3inheritance;
 
-public class AssignmentEx {
-	public static void main(String[] args) {
-		// Simple Assignment Operator
-		int x = 10;
+public class Ex05 {
+	int num = 0;
 
-		// Chained
-		int a = 0, b = 0, c = 0;
-		int y = a = b = c = 20;
-		System.out.println(y);
-		//int g = h = j = 10; // Can't declare and perform operation directly
+	public static void main(String[] args) throws Exception {
 
-		// Compound
-		// int z+=10; Can't declare compute in a single line
-		int z = 0;
-		z += 10;
+		Demo2 d3 = new Demo2();
+		d3.m1(20);
+	}
+}
 
-		a += b -= c *= z;
-		System.out.println(a);
+class Demo1 {
+	public static void m1(int n) {
+		System.out.println("demo 1");
+	}
+}
 
+class Demo2 extends Demo1 {
+
+	public void m1(int... n) {
+		System.out.println("demo 2");
+	}
+
+	public void m12(int n) {
+		System.out.println("Demo3");
 	}
 }

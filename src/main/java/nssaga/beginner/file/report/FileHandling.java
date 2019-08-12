@@ -1,5 +1,5 @@
 /**
-  Ex1GenericBasics.java
+  FileHandling.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,13 +7,24 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 28-Apr-2019		Nawal Sah				Initial Version
+ 11-Aug-2019		Nawal Sah				Initial Version
 
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package nssaga.beginner.generic;
+package nssaga.beginner.file.report;
 
-public class GenericBasics {
+import nssaga.beginner.file.report.service.CSVReportProcessing;
+import nssaga.beginner.file.report.service.ReportProcessing;
 
+public class FileHandling {
+	public static void main(String[] args) {
+		System.out.println("Report reading started...");
+
+		String filePath = "/Users/nawalsah/Code/git/practice-code/data/Income Report.csv";
+
+		ReportProcessing reportProcessing = new CSVReportProcessing();
+		reportProcessing.processFile(filePath);
+
+	}
 }

@@ -7,6 +7,11 @@
 */
 package nssaga.beginner.e06array;
 /**
+ * size of an array must be specified by an int value and not long or short.
+ * Every array type implements the interfaces Cloneable and java.io.Serializable.
+ * Advantage :
+ * 	Random Access, 
+ * 	
  * Limitation :
  * 
  * 1. Fixed size

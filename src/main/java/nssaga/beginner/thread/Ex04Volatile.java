@@ -20,6 +20,10 @@ import java.io.IOException;
  * Using volatile is yet another way (like synchronized, atomic wrapper) of
  * making class thread safe.
  * 
+ * Volatile is used to solve the visibility issue, if we declare a variable as
+ * volatile then while writing value it flush and push the value to shared
+ * memory to make visible to other threads.
+ * 
  * https://www.geeksforgeeks.org/volatile-keyword-in-java/
  * http://tutorials.jenkov.com/java-concurrency/volatile.html
  * 
@@ -48,8 +52,13 @@ import java.io.IOException;
  * synchronization.
  * 
  * Mutual Exclusion: It means that only one thread or process can execute a
- * block of code (critical section) at a time. Visibility: It means that changes
+ * block of code (critical section) at a time i.e read or write operation can
+ * perform at the same time by one thread. Visibility: It means that changes
  * made by one thread to shared data are visible to other threads.
+ * 
+ * So, for visibility issue we use volatile (flag is genrally used ) and compound operation go for synchronize or atomic
+ * 
+ * Advance - Read about the Memory Model to more clarification
  * 
  * Volatile variable example
  */

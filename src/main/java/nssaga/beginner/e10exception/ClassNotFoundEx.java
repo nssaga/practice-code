@@ -23,9 +23,9 @@ package nssaga.beginner.e10exception;
  * methods, while the NoClassDefFoundError occurs when the class is found during
  * the compile time but not at the run time.
  * 
- * Most of the times this exeception occurs when we miss to update the Classpath
+ * Most of the times this exception occurs when we miss to update the Class path
  * with the required Jars. Suppose when we try connect to a database using JDBC
- * then we need to update the classpath with the database driver JARs
+ * then we need to update the class path with the database driver JARs
  */
 public class ClassNotFoundEx {
 	public static void main(String[] args) {

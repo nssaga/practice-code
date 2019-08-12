@@ -52,7 +52,7 @@ package nssaga.beginner.e12oops.e1encapsulation.access;
  * When we make the Constructor as private then object for the class can only be
  * created internally within the class, no outside class can create object for
  * this class. Using this we can restrict the caller from creating objects and
- * preventing object creation from outside class(Singleton Design Pattern). When
+ * preventing object creation from outside class (Singleton Design Pattern). When
  * we still try to create object we will be getting the error message "The
  * constructor SingletonExample() is not visible"
  * 
@@ -76,6 +76,11 @@ package nssaga.beginner.e12oops.e1encapsulation.access;
  * default access modifiers while accessing fields and methods. The output of
  * each of these java files depict the Java access specifiers.
  * 
+ * 
+ * Non-access modifiers : In java, we have 7 non-access modifiers. They are used
+ * with classes, methods, variables, constructors etc to provide information
+ * about their behavior to JVM.They are static, final, abstract, synchronized,
+ * transient, volatile, native
  */
 public class AccessSpecifier {
 

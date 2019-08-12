@@ -15,6 +15,8 @@
 package nssaga.beginner.thread;
 
 /**
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html
+ * 
  * Thread creation by extending the Thread class
  * 
  * We create a class that extends the java.lang.Thread class. This class

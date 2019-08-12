@@ -10,7 +10,7 @@ package nssaga.beginner.e10exception;
  *
  * @author Nawal Sah
  */
-public class ExceptionEx4 {
+public class ExceptionEx04 {
 	static String s = "";
 
 	public static void main(String[] args) {

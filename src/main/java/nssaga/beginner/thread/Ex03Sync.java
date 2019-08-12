@@ -14,6 +14,14 @@
  */
 package nssaga.beginner.thread;
 
+/**
+ * constructors cannot be synchronized — using the synchronized keyword with a
+ * constructor is a syntax error. Synchronizing constructors doesn't make sense,
+ * because only the thread that creates an object should have access to it while
+ * it is being constructed.
+ * 
+ * 
+ */
 public class Ex03Sync {
 
 	public static void main(String[] args) {
@@ -66,7 +74,7 @@ class Thread1 implements Runnable {
 
 	public Thread1(SyncEx syncEx) {
 		this.syncEx = syncEx;
-		
+
 		System.out.println("creating Thread1");
 	}
 
