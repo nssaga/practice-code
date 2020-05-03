@@ -15,7 +15,7 @@
 package nssaga.beginner.e05control.e43forloop;
 
 /**
- * A positive number is called armstrong number if it is equal to the sum of
+ * A positive number is called Armstrong number if it is equal to the sum of
  * cubes of its digits for example 0, 1, 153, 370, 371, 407 etc.
  * 
  * 153 = (1*1*1)+(5*5*5)+(3*3*3)

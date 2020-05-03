@@ -1,19 +1,8 @@
-/**
-  Ex3Sync2.java
- ***********************************************************************************************************************
- Description: 	
-
- Revision History:
- -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
- -----------------------------------------------------------------------------------------------------------------------
- 02-Mar-2019		Nawal Sah				Initial Version
-
- Copyright (c) 2018,
- ***********************************************************************************************************************
- */
 package nssaga.beginner.thread;
 
+/**
+ * Increase counter value by one using two thread and print the value.
+ */
 public class Ex03Sync2 {
 	private int count = 0;
 
@@ -23,6 +12,7 @@ public class Ex03Sync2 {
 	}
 
 	public synchronized void increment() {
+		System.out.println(count);
 		count++;
 	}
 
@@ -34,7 +24,6 @@ public class Ex03Sync2 {
 				for (int i = 0; i < 1000; i++) {
 					increment();
 				}
-
 			}
 		});
 
@@ -44,7 +33,6 @@ public class Ex03Sync2 {
 				for (int i = 0; i < 1000; i++) {
 					increment();
 				}
-
 			}
 		});
 

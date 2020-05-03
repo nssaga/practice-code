@@ -1,17 +1,3 @@
-/**
-  Ex02DeadlockClass.java
- ***********************************************************************************************************************
- Description: 	
-
- Revision History:
- -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
- -----------------------------------------------------------------------------------------------------------------------
- 04-May-2019		Nawal Sah				Initial Version
-
- Copyright (c) 2018,
- ***********************************************************************************************************************
- */
 package nssaga.advance.thread;
 
 public class Ex02DeadlockClass {
@@ -31,8 +17,8 @@ class Th1 implements Runnable {
 	@Override
 	public void run() {
 		synchronized (String.class) {
-			System.out.println("Thread 1 : Lock acquired on String classs");
-			System.out.println("Thread 1 : Wating to acquire lock on String class");
+			System.out.println("Thread 1 : Lock acquired on String class");
+			System.out.println("Thread 1 : Wating to acquire lock on Object class");
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {

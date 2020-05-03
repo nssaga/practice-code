@@ -1,17 +1,3 @@
-/**
-  Ex01Set.java
- ***********************************************************************************************************************
- Description: 	
-
- Revision History:
- -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
- -----------------------------------------------------------------------------------------------------------------------
- 08-May-2019		Nawal Sah				Initial Version
-
- Copyright (c) 2018,
- ***********************************************************************************************************************
- */
 package nssaga.beginner.collection.set;
 
 import java.util.HashSet;
@@ -19,7 +5,7 @@ import java.util.Set;
 
 /**
  * Set is an interface which extends Collection. It is an unordered collection
- * of objects means doesn't guarantee for insertion order and duplicate values
+ * of objects means doesn't maintain/guarantee for insertion order and duplicate values
  * cannot be stored and guarantee for unique value
  * 
  * Basically, Set is implemented by HashSet, LinkedHashSet or TreeSet (sorted
@@ -28,7 +14,7 @@ import java.util.Set;
  * Set has various methods to add, remove clear, size, etc to enhance the usage
  * of this interface
  * 
- * Default clone of HashSet shallow copy. The internal elements are not cloned.
+ * Default clone of HashSet is shallow copy. The internal elements are not cloned.
  * A shallow copy only copies the reference object.
  * 
  * HashSet does not provide any way to compare objects.

@@ -8,6 +8,7 @@ public class Ex07StopThreadExternally {
 		
 		t1.start();
 		t2.start();
+		
 		System.out.println("End main");
 		try{
 			System.in.read();
@@ -15,6 +16,7 @@ public class Ex07StopThreadExternally {
 		}catch(Exception e){
 			System.err.println("Error in reading");
 		}
+		
 	}
 }
 
@@ -26,7 +28,7 @@ class myRunnable implements Runnable{
 		for(int i=0;i<500;i++){
 			synchronized (this) {
 				try{
-					Thread.sleep(3000);
+					Thread.sleep(1000);
 					System.out.println(i+" Thread Name :: "+Thread.currentThread().getName());
 				}catch(InterruptedException ie){
 					System.err.println("Inturrepted");

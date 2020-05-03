@@ -1,17 +1,3 @@
-/**
-  Ex11Thread.java
- ***********************************************************************************************************************
- Description: 	
-
- Revision History:
- -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
- -----------------------------------------------------------------------------------------------------------------------
- 02-Mar-2019		Nawal Sah				Initial Version
-
- Copyright (c) 2018,
- ***********************************************************************************************************************
- */
 package nssaga.beginner.thread;
 
 import java.io.IOException;
@@ -24,13 +10,16 @@ import java.io.IOException;
  * volatile then while writing value it flush and push the value to shared
  * memory to make visible to other threads.
  * 
+ * But volatile doen't reflect changes each other on the variable when two
+ * thread execute at the same time
+ * 
  * https://www.geeksforgeeks.org/volatile-keyword-in-java/
  * http://tutorials.jenkov.com/java-concurrency/volatile.html
  * 
  * volatile keyword makes sure that the changes made in one thread are
  * immediately reflect in other thread.
  * 
- * The volatile keyword is used to say to the jvm "Warning, this variable may be
+ * The volatile keyword is used to say to the JVM "Warning, this variable may be
  * modified in an other Thread".
  * 
  * The volatile force the thread to update the original variable for each
@@ -48,15 +37,18 @@ import java.io.IOException;
  * 
  * volatile vs synchronized:
  * 
- * Before we move on let’s take a look at two important features of locks and
+ * Before we move on, let’s take a look at two important features of locks and
  * synchronization.
  * 
  * Mutual Exclusion: It means that only one thread or process can execute a
  * block of code (critical section) at a time i.e read or write operation can
- * perform at the same time by one thread. Visibility: It means that changes
- * made by one thread to shared data are visible to other threads.
+ * perform at the same time by one thread.
  * 
- * So, for visibility issue we use volatile (flag is genrally used ) and compound operation go for synchronize or atomic
+ * Visibility: It means that changes made by one thread on shared data are
+ * visible to other threads.
+ * 
+ * So, for visibility issue we use volatile (flag is generally used ) and
+ * compound operation go for synchronize or atomic
  * 
  * Advance - Read about the Memory Model to more clarification
  * 
@@ -97,5 +89,4 @@ class Machine extends Thread {
 		running = false;
 		System.out.println("Return key pressed, shutting down the machine.");
 	}
-
 }

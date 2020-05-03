@@ -1,14 +1,3 @@
-/*------------------------------------------------------------------------------------------------------
- NEWGEN SOFTWARE TECHNOLOGIES LIMITED
- Author                         : nawal.sah
- Group                          : AP-2
- Project/Product                : ADF Phonix Project 
- Module                         : Web Portal Development
- File Name                      : DeadlockDemo.java
- Date (DD/MM/YYYY)              : May 4, 2017
- Description                    : 
- ------------------------------------------------------------------------------------------------------*/
-
 package nssaga.advance.thread;
 
 /**

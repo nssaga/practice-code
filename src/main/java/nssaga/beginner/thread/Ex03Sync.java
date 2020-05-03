@@ -1,17 +1,3 @@
-/**
-  Ex3Sync.java
- ***********************************************************************************************************************
- Description: 	
-
- Revision History:
- -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
- -----------------------------------------------------------------------------------------------------------------------
- 10-Oct-2018		Nawal Sah				Initial Version
-
- Copyright (c) 2018,
- ***********************************************************************************************************************
- */
 package nssaga.beginner.thread;
 
 /**
@@ -27,12 +13,11 @@ public class Ex03Sync {
 	public static void main(String[] args) {
 		SyncEx ex = new SyncEx();
 
-		Thread1 thread1 = new Thread1(ex);
+		QuestionThread thread1 = new QuestionThread(ex);
 		new Thread(thread1, "Question").start();
 
-		Thread2 thread2 = new Thread2(ex);
+		AnswerThread thread2 = new AnswerThread(ex);
 	}
-
 }
 
 class SyncEx {
@@ -66,16 +51,15 @@ class SyncEx {
 	}
 }
 
-class Thread1 implements Runnable {
+class QuestionThread implements Runnable {
 
 	SyncEx syncEx;
 
 	String ques[] = { "Hi", "How are you ?", "I am also doing fine!" };
 
-	public Thread1(SyncEx syncEx) {
+	public QuestionThread(SyncEx syncEx) {
 		this.syncEx = syncEx;
-
-		System.out.println("creating Thread1");
+		System.out.println("creating question Thread");
 	}
 
 	@Override
@@ -86,15 +70,15 @@ class Thread1 implements Runnable {
 	}
 }
 
-class Thread2 implements Runnable {
+class AnswerThread implements Runnable {
 	SyncEx syncEx;
 
 	String answer[] = { "Hi", "I am good, what about you?", "Great!" };
 
-	public Thread2(SyncEx syncEx) {
+	public AnswerThread(SyncEx syncEx) {
 		this.syncEx = syncEx;
 		new Thread(this, "Answer").start();
-		System.out.println("creating Thread2");
+		System.out.println("creating answer Thread");
 	}
 
 	@Override

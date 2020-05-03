@@ -1,17 +1,3 @@
-/**
-  Ex02Constructor.java
- ***********************************************************************************************************************
- Description: 	
-
- Revision History:
- -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
- -----------------------------------------------------------------------------------------------------------------------
- 27-May-2019		Nawal Sah				Initial Version
-
- Copyright (c) 2018,
- ***********************************************************************************************************************
- */
 package nssaga.beginner.e08constructor;
 
 public class Ex02Constructor {
@@ -44,7 +30,7 @@ class Ex02Constructor3 {
 }
 
 class Ex02Constructor4 {
-	// not visible outside of package, onli visible to same package and extended
+	// not visible outside of package, only visible to same package and extended
 	// class
 	protected Ex02Constructor4() {
 		System.out.println("protected construtor");

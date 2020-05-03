@@ -1,17 +1,3 @@
-/**
-  MinMaxInArray.java
- ***********************************************************************************************************************
- Description: 	
-
- Revision History:
- -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
- -----------------------------------------------------------------------------------------------------------------------
- 06-Jun-2019		Nawal Sah				Initial Version
-
- Copyright (c) 2018,
- ***********************************************************************************************************************
- */
 package nssaga.advance.problem;
 
 /**
@@ -47,16 +33,16 @@ public class MinMaxInArray {
 		} else {
 			min = arr[0];
 			max = arr[0];
+
+			for (int i = 1; i < arr.length; i++) {
+				if (arr[i] < min)
+					min = arr[i];
+				else if (arr[i] > max)
+					max = arr[i];
+			}
+			System.out.println("Min - " + min + ", Max - " + max);
 		}
 
-		for (int i = 1; i < arr.length; i++) {
-			if (arr[i] < min)
-				min = arr[i];
-			else if (arr[i] > max)
-				max = arr[i];
-		}
-
-		System.out.println("Min - " + min + ", Max - " + max);
 	}
 
 	public static MinMaxObj printMinMax2(int[] arr) {

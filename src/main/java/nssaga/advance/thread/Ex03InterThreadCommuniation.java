@@ -1,9 +1,3 @@
-/*----------------------------------------------
- Author		: Nawal Sah 
- File Name	: InterThreadCommuniationEx.java
- Date		: 26-Aug-2017 
-
- ---------------------------------------------*/
 package nssaga.advance.thread;
 
 import java.util.Scanner;
@@ -107,7 +101,7 @@ public class Ex03InterThreadCommuniation {
 				notify();
 
 				Thread.sleep(1000);
-				System.out.println("afer");
+				System.out.println("after");
 			}
 		}
 

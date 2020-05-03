@@ -12,9 +12,7 @@
  Copyright (c) 2018,
  ***********************************************************************************************************************
  */
-package nssaga.beginner.e07static;
-
-import nssaga.beginner.e08constructor.Ex02Constructor;
+package nssaga.beginner.e07keyword.staticex;
 
 /**
  * static block (also called static clause) can be used for static
@@ -23,10 +21,17 @@ import nssaga.beginner.e08constructor.Ex02Constructor;
  * access a static member of that class (even if we never make an object of that
  * class).
  * 
+ * this keyword cannot be used in static block in java.
+ * 
+ * 
  * static blocks are executed before constructors.
  * 
  * Sequence of execution of block : 1. Static block, 2. Initializer block 3.
  * Constructor block
+ * 
+ * Static and non-static variables (instance variables) can be accessed inside
+ * instance block in java.
+ * 
  */
 public class Ex01StaticBlock {
 	public static void main(String args[]) {
