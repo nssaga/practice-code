@@ -23,14 +23,17 @@ package nssaga.beginner.e12oops.e2abstraction;
  * 
  * Interface also allows multiple inheritance in Java, which makes it possible
  * for a class to become Canvas, as well as EventListener, which is used to draw
- * graphics as well as to to process events.
+ * graphics as well as to process events.
  * 
  * 
- * Why we need Interface in Java. There are several
- * reasons, an application developer needs an interface, one of them is Java's
- * feature to provide multiple inheritance at interface level. It allows you to
- * write flexible code, which can adapt to handle future requirements. Some of
- * the concrete reasons, why you need interface is :
+ * Why we need Interface in Java?
+ * 
+ * There are several reasons, an application developer needs an interface, one
+ * of them is Java's feature to provide multiple inheritance at interface level.
+ * It allows you to write flexible code, which can adapt to handle future
+ * requirements.
+ * 
+ * Some of the concrete reasons, why you need interface is :
  * 
  * 1) If you only implement methods in subclasses, the callers will not be able
  * to call them via the interface (not common point where they are defined).
@@ -104,8 +107,6 @@ package nssaga.beginner.e12oops.e2abstraction;
  * supply a mock or stub implementation instead of real one. Since unit testing
  * is very important for delivering quality software, its better to use
  * interface in Java then class, especially for type declaration.
- * 
- * 
  * 
  * 
  * @author nawalsah

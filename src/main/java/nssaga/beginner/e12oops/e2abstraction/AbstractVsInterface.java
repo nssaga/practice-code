@@ -36,7 +36,9 @@ package nssaga.beginner.e12oops.e2abstraction;
  * should not be consider during building classes.
  * 
  * 
- * When to use abstract class over interface: Abstract class is mainly used to:
+ * When to use abstract class over interface: 
+ * 
+ * Abstract class is mainly used to:
  * 
  * Define a default behavior for subclasses. It means that all child classes
  * should have perform same functionality.

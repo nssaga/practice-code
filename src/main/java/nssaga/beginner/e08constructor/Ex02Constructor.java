@@ -17,7 +17,7 @@ class Ex02Constructor1 {
 }
 
 class Ex02Constructor2 {
-	// Private constructor is not visible and not allowed to create objct
+	// Private constructor is not visible and not allowed to create object
 	private Ex02Constructor2() {
 		System.out.println("private construtor");
 	}

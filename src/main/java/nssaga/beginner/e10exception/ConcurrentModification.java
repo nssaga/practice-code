@@ -9,7 +9,7 @@
  -----------------------------------------------------------------------------------------------------------------------
  08-Jan-2020		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e10exception;
@@ -39,7 +39,7 @@ public class ConcurrentModification {
 
 		for (String str : list1) {
 			System.out.println(str);
-			list1.remove("Abc"); // throw concurrent modification exception but the size is
+			list1.remove("Abc"); // throw concurrent modification exception as it will iterated over and find modified
 		}
 	}
 }

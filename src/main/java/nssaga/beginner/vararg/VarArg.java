@@ -28,11 +28,11 @@ public class VarArg {
 
 	}
 
-	void vararg2(int... arg) {
+	void vararg2(int ... arg) {
 
 	}
 
-	void vararg2(String a, int... arg) {
+	void vararg2(String a, int ...arg) {
 
 	}
 	

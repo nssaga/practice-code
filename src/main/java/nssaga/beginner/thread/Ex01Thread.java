@@ -7,9 +7,9 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 10-Oct-2018		Nawal Sah				Initial Version
+ 10-Oct-2020		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.thread;
@@ -26,12 +26,12 @@ package nssaga.beginner.thread;
  * method on the Thread object.
  * 
  * Runnable provides the means for a class to be active while not sub classing
- * Thread. A class that implements Runnable can run without sub classing Thread
- * by instantiating a Thread instance and passing itself in as the target. In
- * most cases, the Runnable interface should be used if you are only planning to
- * override the run() method and no other Thread methods. This is important
- * because classes should not be sub classed unless the programmer intends on
- * modifying or enhancing the fundamental behavior of the class.
+ * Thread. A class that implements Runnable can run without sub classing Thread,
+ * but by instantiating a Thread instance and passing itself in as the target.
+ * In most cases, the Runnable interface should be used if you are only planning
+ * to override the run() method and no other Thread methods. This is important
+ * because classes should not be sub classed of Thread unless the programmer
+ * intends on modifying or enhancing the fundamental behavior of the class.
  * 
  * 
  *

@@ -9,7 +9,7 @@
  -----------------------------------------------------------------------------------------------------------------------
  27-May-2019		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e07keyword.staticex;
@@ -50,18 +50,21 @@ class Test {
 	static int i;
 	int j;
 
-	Test() {
-		System.out.println("Constructor called");
-	}
-
-	// Initializer block is Called every time when object is created
-	{
-		System.out.println("Initializer block");
-	}
-	// start of static block
+	// 1. start of static block
 	static {
 		i = 10;
 		System.out.println("static block called ");
 	}
 	// end of static block
+
+	// 2. Initializer block is Called every time when object is created
+	{
+		System.out.println("Initializer block");
+	}
+
+	// 3.
+	Test() {
+		System.out.println("Constructor called");
+	}
+
 }

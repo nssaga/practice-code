@@ -10,6 +10,10 @@ package nssaga.beginner.e10exception;
  * Creating user defined checked exception. <br>
  * By extending java.lang.Exception, we can create checked exception.
  * 
+ * Checked exception class name: IOException, FileNotFoundException
+ * 
+ * FileNotFoundException is a subclass of IOException 
+ * 
  * @author Nawal Sah
  */
 class UserDefinedExceptionClass extends Exception {

@@ -21,7 +21,7 @@ public class PrimeNumber {
 	}
 
 	/**
-	 * time complexity of O(n/2)
+	 * time complexity of O(n)
 	 * 
 	 * @param n
 	 * @return
@@ -35,7 +35,7 @@ public class PrimeNumber {
 		return true;
 	}
 
-	//Way 2
+	// Way 2
 	public static void primeNumber2(int n) {
 		for (int i = 2; i < n; i++) {
 			boolean flag = true;
@@ -50,6 +50,21 @@ public class PrimeNumber {
 			}
 
 		}
+	}
+
+	/**
+	 * Complexity O(n/2)
+	 * 
+	 * @param n
+	 * @return
+	 */
+	public static boolean isPrimeNumber3(int n) {
+		for (int i = 2; i <= n / 2; i++) {
+			if (n % i == 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 }

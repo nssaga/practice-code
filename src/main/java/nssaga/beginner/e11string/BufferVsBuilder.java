@@ -9,7 +9,7 @@
  -----------------------------------------------------------------------------------------------------------------------
  02-May-2019		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e11string;
@@ -18,7 +18,7 @@ package nssaga.beginner.e11string;
  * StringBuffer and StringBuilder are a mutable alternative of String class and
  * you can change the content without creating additional objects.
  * 
- * 1) StringBuffer is present in Java and StringBuilder was added in Java 5.
+ * 1) StringBuffer was present in Java and StringBuilder was added in Java 5.
  * 
  * 2) Both StringBuffer and StringBuilder represents mutable String which means
  * you can add/remove characters, substring without creating new objects.
@@ -36,7 +36,7 @@ package nssaga.beginner.e11string;
  * 
  * 6) Because of synchronization StringBuffer is considered thread safe e.g.
  * multiple threads can call its method without compromising internal data
- * structure but StringBuilder is not synchronized hence not thread safe. See
+ * structure but StringBuilder is not synchronized hence not thread safe.
  * 
  * 
  * 7) Another side effect of synchronization is speed. Since StringBuffer is

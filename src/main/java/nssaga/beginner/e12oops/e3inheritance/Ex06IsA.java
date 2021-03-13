@@ -1,5 +1,5 @@
 /**
-  ex1Array1D.java
+  Ex06IsA.java
  ***********************************************************************************************************************
  Description: 	
 
@@ -7,13 +7,18 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 20-Aug-2020		Nawal Sah				Initial Version
+ 02-Sep-2020		Nawal Sah				Initial Version
 
  Copyright (c) 2020,
  ***********************************************************************************************************************
  */
-package nssaga.beginner.e06array;
+package nssaga.beginner.e12oops.e3inheritance;
 
-public class ex1Array1D {
+
+/**
+ * Is a relationship is inheritance.
+ * extends keyword is used to to inherit the properties.	
+ */
+public class Ex06IsA {
 
 }

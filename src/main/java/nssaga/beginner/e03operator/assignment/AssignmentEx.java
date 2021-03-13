@@ -7,9 +7,9 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 12-Aug-2018		Nawal Sah				Initial Version
+ 12-Aug-2020		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e03operator.assignment;
@@ -26,7 +26,7 @@ public class AssignmentEx {
 		//int g = h = j = 10; // Can't declare and perform operation directly
 
 		// Compound
-		// int z+=10; Can't declare compute in a single line
+		// int z+=10; //Can't declare and compute in a single line
 		int z = 0;
 		z += 10;
 

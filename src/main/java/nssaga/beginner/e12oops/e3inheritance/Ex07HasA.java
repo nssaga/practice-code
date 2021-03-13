@@ -1,24 +1,17 @@
 /**
-  IsA.java
+  Ex07HasA.java
  ***********************************************************************************************************************
- Description: 	
-
  Revision History:
  -----------------------------------------------------------------------------------------------------------------------
- Date         	Author               	Reason for Change
+ Date         	    Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 02-Sep-2018		Nawal Sah				Initial Version
+ 12-May-2020		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e12oops.e3inheritance;
 
-
-/**
- * Is a relationship is inheritance.
- * extends keyword is used to to inherit the properties.	
- */
-public class IsA {
+public class Ex07HasA {
 
 }

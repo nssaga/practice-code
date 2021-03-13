@@ -9,11 +9,14 @@ package nssaga.beginner.e10exception;
 /**
  * By extending java.lang.RuntimeException, we can create unchecked exception.
  * 
+ * Runtime Exception : NullPointerException, NumberFormatException,
+ * ClassCastException, ArrayIndexOutOfBoundException
+ * 
  * @author Nawal Sah
  */
 public class UserDefinedUncheckedExceptionClass {
 
-	String s1 = this.getClass().getName()+"@"+Integer.toHexString(this.hashCode());
+	String s1 = this.getClass().getName() + "@" + Integer.toHexString(this.hashCode());
 
 	/**
 	 * @param args

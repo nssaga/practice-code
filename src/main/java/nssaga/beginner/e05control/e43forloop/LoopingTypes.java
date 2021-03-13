@@ -9,7 +9,7 @@
  -----------------------------------------------------------------------------------------------------------------------
  08-Jan-2020		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e05control.e43forloop;
@@ -17,6 +17,6 @@ package nssaga.beginner.e05control.e43forloop;
 public class LoopingTypes {
 
 	// For
-	// For each
+	// For each or enhanced loop
 
 }

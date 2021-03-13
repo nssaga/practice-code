@@ -10,10 +10,17 @@ package nssaga.beginner.e12oops.e2abstraction;
  * 
  * Abstract class can contain instance variable and these instance variables are
  * public by default
+ * 
+ * Abstract class must have abstract keyword and also with method if don't body,
+ * if we don't write abstract then it give CT exception. Example below
  */
 
 public class ExAbstraction {
 	public static void main(String[] args) {
-		
+
 	}
+}
+
+abstract class ExAbstract1 {
+	abstract void m1();
 }

@@ -9,7 +9,7 @@
  -----------------------------------------------------------------------------------------------------------------------
  03-Mar-2019		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e12oops.e3inheritance;
@@ -20,9 +20,9 @@ package nssaga.beginner.e12oops.e3inheritance;
  * 
  * Order of execution, first parent object and then child constructor called.
  * 
- * Whenever we are creating child class object parent args no constructor will be
- * executed but not args constructor also parent object won't be created and
- * only object will be created for child class not for parent.
+ * Whenever we are creating child class object, parent no argument constructor
+ * will be executed but not argument constructor also parent object won't be
+ * created and only object will be created for child class not for parent.
  * 
  * Constructor doen't inherit to sub class.
  * 
@@ -82,6 +82,7 @@ class Person {
 	public Person(String name) {
 		System.out.println("parent arg constructor executed , has code : " + this.hashCode());
 	}
+
 	public String getName() {
 		return name;
 	}

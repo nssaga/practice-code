@@ -15,7 +15,7 @@ package nssaga.beginner.e05control.e43forloop;
 public class PerfectNumber {
 
 	public static void main(String[] args) {
-		//int n = 49;
+		// int n = 49;
 		int n = 28;
 		int sum = 0;
 
@@ -32,6 +32,22 @@ public class PerfectNumber {
 			System.out.println("not a perfect number");
 		}
 
+	}
+
+	public static boolean isPerfect(int num) {
+		int sum = 0;
+		boolean isP = false;
+		for (int i = 1; i <= num / 2; i++) {
+			if (num % i == 0) {
+				sum += i;
+			}
+		}
+
+		if (sum == num) {
+			isP = true;
+		}
+
+		return isP;
 	}
 
 }

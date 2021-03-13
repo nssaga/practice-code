@@ -26,7 +26,7 @@ public class Autoboxing {
 		
 		System.out.println(ch);
 		
-		ArrayList<Integer> l = new ArrayList<Integer>();
+		ArrayList<Integer> l = new ArrayList<>();
 		
 		// Autoboxing because ArrayList stores only objects
 		l.add(25);

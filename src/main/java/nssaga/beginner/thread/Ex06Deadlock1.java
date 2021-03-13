@@ -6,11 +6,12 @@ public class Ex06Deadlock1 {
 		Thread th = new Thread(t);
 
 		th.start();
-		// Thread acquires lock on myRunnable object so "Before wait" was printed but notify wasn't
-		// called so "After wait" will never be printed, this is called frozen process. Deadlock is
-		// formed, These type of deadlocks are called Frozen processes.
+		// Thread acquires lock on myRunnable object before message "Before wait" was
+		// printed but notify wasn't called so "After wait" will never be printed, this
+		// is called frozen process. Deadlock is formed, These type of deadlocks are
+		// called Frozen processes.
 	}
-}	
+}
 
 class Test implements Runnable {
 	@Override

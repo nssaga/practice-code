@@ -20,7 +20,7 @@ import java.io.IOException;
 
 public class CustomExceptionHandling {
 
-	public static void main(String[] args) throws NegativeNumberException, IOException {
+	public static void main(String[] args) throws IOException { // Runtime exception is mandatory to throw
 		try {
 			testException(-5);
 			testException(-10);

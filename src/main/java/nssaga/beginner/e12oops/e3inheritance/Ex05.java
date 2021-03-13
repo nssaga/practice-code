@@ -9,7 +9,7 @@
  -----------------------------------------------------------------------------------------------------------------------
  14-Jul-2019		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.e12oops.e3inheritance;
@@ -21,12 +21,23 @@ public class Ex05 {
 
 		Demo2 d3 = new Demo2();
 		d3.m1(20);
+		
+		d3.m1("acv");
+
 	}
 }
 
 class Demo1 {
-	public static void m1(int n) {
+	public void m1(int n) {
 		System.out.println("demo 1");
+	}
+
+	/**
+	 * Static method can't override
+	 * 
+	 */
+	public static void m1(String n) {
+		System.out.println("demo static");
 	}
 }
 
@@ -36,7 +47,8 @@ class Demo2 extends Demo1 {
 		System.out.println("demo 2");
 	}
 
-	public void m12(int n) {
+	public void m1(int n) {
 		System.out.println("Demo3");
 	}
+
 }

@@ -7,9 +7,9 @@
  -----------------------------------------------------------------------------------------------------------------------
  Date         	Author               	Reason for Change
  -----------------------------------------------------------------------------------------------------------------------
- 25-Aug-2018		Nawal Sah				Initial Version
+ 25-Aug-2020		Nawal Sah				Initial Version
 
- Copyright (c) 2018,
+ Copyright (c) 2020,
  ***********************************************************************************************************************
  */
 package nssaga.beginner.enums;
@@ -37,7 +37,7 @@ import java.util.Arrays;
  * 
  * Advantages of enum:
  * 
- * it provides type safety.
+ * It provides type safety.
  * 
  * enum improves type safety at compile-time checking to avoid errors at
  * run-time. enum can be easily used in switch enum can be traversed enum can
@@ -121,7 +121,9 @@ public enum Ex01User {
 	 * @return
 	 */
 	public String getName(byte value) {
-		return Arrays.stream(Ex01User.values()).filter(user -> user.getValue() == value).findFirst()
+		return Arrays.stream(Ex01User.values())
+				.filter(user -> user.getValue() == value)
+				.findFirst()
 				.orElse(NOT_SUPPORTED).name();
 	}
 
@@ -132,7 +134,9 @@ public enum Ex01User {
 	 * @return
 	 */
 	public Byte getValue(String name) {
-		return Arrays.stream(Ex01User.values()).filter(user -> user.name().equalsIgnoreCase(name)).findFirst()
+		return Arrays.stream(Ex01User.values())
+				.filter(user -> user.name().equalsIgnoreCase(name))
+				.findFirst()
 				.orElse(NOT_SUPPORTED).getValue();
 	}
 
@@ -143,7 +147,9 @@ public enum Ex01User {
 	 * @return
 	 */
 	public static Ex01User getEnum(byte value) {
-		return Arrays.stream(Ex01User.values()).filter(user -> user.getValue() == value).findFirst()
+		return Arrays.stream(Ex01User.values())
+				.filter(user -> user.getValue() == value)
+				.findFirst()
 				.orElse(NOT_SUPPORTED);
 	}
 }
